@@ -17,18 +17,19 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
+while(digitalRead(buttonPin)==HIGH){
   buttonState=digitalRead(buttonPin);
-switch (i) {
-  case 1:
-      digitalWrite(r,HIGH);
-      digitalWrite(g,HIGH);
-      digitalWrite(b,HIGH);
-      delay(1500);
-      digitalWrite(r,LOW);
-      digitalWrite(g,LOW);
-      digitalWrite(b,LOW);
-      i++;
-    break;
+  switch (i) {
+    case 1:
+        digitalWrite(r,HIGH);
+        digitalWrite(g,HIGH);
+        digitalWrite(b,HIGH);
+        delay(1500);
+        digitalWrite(r,LOW);
+        digitalWrite(g,LOW);
+        digitalWrite(b,LOW);
+        i++;
+      break;
   case 2:
       digitalWrite(r,HIGH);
       delay(1500);
@@ -68,4 +69,5 @@ switch (i) {
       digitalWrite(g,LOW);
       digitalWrite(b,LOW);
       }
+  }
 }
